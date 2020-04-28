@@ -3,7 +3,7 @@ import os
 import time
 import MotorController
 
-motorFile = "motor.txt"
+motorFile = "/home/pi/Scripts/motor.txt"
 lastModifiedTime = None
 
 def SleepyTime(length=1):
@@ -11,7 +11,7 @@ def SleepyTime(length=1):
     time.sleep(length)
 
 def Finished():
-    f = open("motor.txt", "w")
+    f = open(motorFile, "w")
     f.write("F")
     f.close()
     FirstLoop()
@@ -25,9 +25,8 @@ def FirstLoop():
     f.close()
 
     if (temp == "T"):
-        f = open("motor.txt", "w")
-        f.write("E")
-        f.close()
+        MotorController.PhaseOne()
+        FirstLoop()
     else:
         lastModifiedTime = os.stat(motorFile)
         MainLoop()

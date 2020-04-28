@@ -1,7 +1,7 @@
 import time
 from adafruit_motor import stepper
 from adafruit_motorkit import MotorKit
-
+ 
 kit = MotorKit()
 
 # Motor
@@ -50,11 +50,8 @@ def StepperController(Motor=1, Style="D", Direction="F", StepCount = 200):
     for i in range(StepCount):
         Motor(direction=Direction, style=Style)
 
-def PhaseOne():
-    f=open("/home/pi/Scripts/Phase1.txt", "w+")
-    f.write("Done")
-    f.close()
-
-    f=open("/home/pi/Scripts/motor.txt", "w")
-    f.write("F")
-    f.close()
+StepperController(StepCount=1000)
+StepperController(Style="S", StepCount=1000)
+StepperController(Style="I", StepCount=1000)
+StepperController(Style="M", StepCount=1000)
+ReleaseMotors()

@@ -10,8 +10,40 @@
 <body>  
     <body style="background-color:#343434;"></body>
     <center>
-        <font color="Red"><h1> {{ Message }}</h1></font>
+        <font color="Red"><h1 id="Error">{{ Message }}</h1></font>
         <font color="White"><h2>MotorRunning: {{ motorRunning }}</h2></font>
     <a href="/run"><button class="w3-button w3-red">Run Script</button></a></p>
+    <!--<input type="radio" id="dc" name="corntc" value="dc" onclick="DisableReset()">-->
+    <!--<font color="White"><font size="14"><label for="dc" onclick="DisableReset()">Don't Reset</label></br></font>-->
+    <!--<input type="radio" id="c" name="corntc" value="c" onclick="EnableReset()">-->
+    <div class="ResetElement" id="ResetElement">
+    <p1><font size="5" color="Red"><label for="c" onclick="EnableReset()">Enable Reset Button</label></br></font></p1>
+    <a href="/reset"><button class="w3-button w3-white" id="Reset" disabled>Reset Script</button></a></p>
+    </div>
     </center>
+
+    <script>
+
+        if (document.getElementById('Error').textContent.toString() == "") {
+            HideDisplayResetElement();
+        } else {
+            DisplayResetElement();
+        }
+
+
+        function DisableReset() {
+            document.getElementById('Reset').setAttribute("disabled", null);
+        }
+        function EnableReset() {
+            document.getElementById('Reset').removeAttribute("disabled");
+        }
+
+        function DisplayResetElement() {
+            document.getElementById("ResetElement").style.display = "block"; 
+        }
+
+        function HideDisplayResetElement() {
+            document.getElementById("ResetElement").style.display = "none"; 
+        }
+    </script>
 </body>
