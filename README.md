@@ -3,7 +3,7 @@ Automated LitterBox using Raspberry Pi and Stepper Motors
 
 I will be creating sections and they will have a last update field per section. 
 
-===================================================================================
+---
 About the project:
 Hello!
 I got two cats in Januray of 2020. When picking out the supplys for them, I saw the large collection of automated litterboxes. All costing a pretty penny. I understand it would be making my life easier by purchasing them but I knew I could probably make it myself. I was hoping it would be cheaper but I also don't really know much about how much torque I would need and how much it was going to weigh. I just had the idea. And I wanted to start the project. So the price list below will change as I learn. 
@@ -11,7 +11,7 @@ I got two cats in Januray of 2020. When picking out the supplys for them, I saw 
 The code.. This is my first time really publishing my code. I have not taken any classes with Python or really any other programming language. Mostly self taught through trial and error with some youtube in there. As of the time I am writing this, the code has very minimal error checking and bugging. Not one error log.. but they will come! Logs are great but I have a bunch of projects I am working on so I am kinda going back and fourth.
 
 If you have any suggestions or questions, please feel free to let me know. Let's make this an awesome DIY automated cat litter box. 
-===================================================================================
+---
 Parts:
 Last Update: April 29th, 2020
 
@@ -33,7 +33,7 @@ Trying to continue with parts off amazon.
 When I get the printer, I will create a second list for those with printers.  
 ---
 
-===================================================================================
+---
 Assembly: TBD
 Last Update: April 29th, 2020
-===================================================================================
+---
