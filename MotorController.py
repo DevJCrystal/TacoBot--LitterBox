@@ -49,8 +49,11 @@ def StepperController(Motor=1, Style="D", Direction="F", StepCount = 200):
 
     print(f"Motor: {tempMotor} | Style: {Style} | Direction: {Direction} | StepCount: {StepCount}")
 
+    #timeStart = time.time()
     for i in range(StepCount):
         Motor(direction=Direction, style=Style)
+    #finishedTime = time.time() - timeStart
+    #print(finishedTime)
 
 def PhaseOne():
     FinishedPhases()
@@ -58,7 +61,9 @@ def PhaseOne():
 def FinishedPhases():
     
     # for testing purposes
-    time.sleep(5)
+    StepperController(Style="D", StepCount=1000)
+    StepperController(Style="S", StepCount=1000)
+    ReleaseMotors(1)
 
     # Update everyone we finished!
     f=open(motorPath, "w")

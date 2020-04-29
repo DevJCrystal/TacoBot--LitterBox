@@ -33,7 +33,7 @@ def ReadMotorFileState():
     global isRunning
 
     f = open(motorPath, "r")
-    isRunning = f.readline()
+    isRunning = f.readline().strip()
     f.close()
 
 def SetDataFileState():
@@ -144,7 +144,7 @@ def resetdata_task():
     SC = 0
     EC = 0
     SetDataFileState()
-
+    
     return redirect(url_for('homepage'))
 
 if __name__ == '__main__':
