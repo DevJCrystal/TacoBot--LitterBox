@@ -2,6 +2,7 @@
 import os
 import time
 import subprocess
+import MotorController
 from flask import Flask, render_template, redirect, url_for
 app = Flask(__name__)
 
@@ -79,11 +80,11 @@ def UpdateVar():
     if (isRunning == "T" and startUp):
         SetMotorFileState("E")
 
-    if (startUp):
-        # Starts the monitor script
-        p = subprocess.Popen(['python3', '/home/pi/Scripts/Monitor.py'], 
-                                    stdout=subprocess.PIPE, 
-                                    stderr=subprocess.STDOUT)
+    #if (startUp):
+    #    # Starts the monitor script
+    #    p = subprocess.Popen(['python3', '/home/pi/Scripts/Monitor.py'], 
+    #                                stdout=subprocess.PIPE, 
+    #                                stderr=subprocess.STDOUT)
         
 
     # Set this to false after first fun
@@ -118,6 +119,7 @@ def run_task():
         print ("Run Litter Cleanup")
         SetMotorFileState("T")
         isRunningTimeStamp = os.stat(motorPath)
+        MotorController.PhaseOne()
         
     return redirect(url_for('homepage'))
 
