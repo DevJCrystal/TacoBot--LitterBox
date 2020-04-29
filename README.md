@@ -11,6 +11,15 @@ I got two cats in Januray of 2020. When picking out the supplys for them, I saw 
 The code.. This is my first time really publishing my code. I have not taken any classes with Python or really any other programming language. Mostly self taught through trial and error with some youtube in there. As of the time I am writing this, the code has very minimal error checking and bugging. Not one error log.. but they will come! Logs are great but I have a bunch of projects I am working on so I am kinda going back and fourth.
 
 If you have any suggestions or questions, please feel free to let me know. Let's make this an awesome DIY automated cat litter box. 
+
+---
+Progress:
+Last Update: April 29th, 2020
+
+1. MotorController completed
+2. Basic webpage completed
+3. Android app that connects to webpage completed
+4. Wait for parts
 ---
 Parts:
 Last Update: April 29th, 2020
