@@ -41,8 +41,6 @@ Trying to continue with parts off amazon.
 
 When I get the printer, I will create a second list for those with printers.  
 ---
-
----
 Assembly: TBD
 Last Update: April 29th, 2020
 ---
