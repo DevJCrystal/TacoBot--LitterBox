@@ -10,12 +10,6 @@ def SleepyTime(length=1):
     print(f"Going to sleep for: {length}")
     time.sleep(length)
 
-def Finished():
-    f = open(motorFile, "w")
-    f.write("F")
-    f.close()
-    FirstLoop()
-
 def FirstLoop():
     global motorFile
     global lastModifiedTime
@@ -35,7 +29,7 @@ def MainLoop():
     global motorFile
     global lastModifiedTime
 
-    SleepyTime(5)
+    SleepyTime()
     if (lastModifiedTime != os.stat(motorFile)):
         FirstLoop()
     else:

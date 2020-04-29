@@ -12,7 +12,7 @@
     <center>
         <font color="Red"><h1 id="Error">{{ Message }}</h1></font>
         <font color="White"><h2>MotorRunning: {{ motorRunning }}</h2></font>
-    <a href="/run"><button class="w3-button w3-red">Run Script</button></a></p>
+    <a href="/run"><button class="w3-button w3-red" id="RunButton">Run Script</button></a></p>
     <!--<input type="radio" id="dc" name="corntc" value="dc" onclick="DisableReset()">-->
     <!--<font color="White"><font size="14"><label for="dc" onclick="DisableReset()">Don't Reset</label></br></font>-->
     <!--<input type="radio" id="c" name="corntc" value="c" onclick="EnableReset()">-->
@@ -20,9 +20,24 @@
     <p1><font size="5" color="Red"><label for="c" onclick="EnableReset()">Enable Reset Button</label></br></font></p1>
     <a href="/reset"><button class="w3-button w3-white" id="Reset" disabled>Reset Script</button></a></p>
     </div>
+    <font color="Red"><h2>Error Count: {{ EC }}</font></br><font color="Teal">Success Count: {{ SC }}</h2></font>
     </center>
 
     <script>
+
+        var running = "{{ motorRunning }}"
+
+        if (running.toString() == "T") {
+            document.getElementById("RunButton").setAttribute("disabled", null);
+            restartTask();	    
+        }
+
+        function restartTask() {
+
+            setTimeout(function() {
+            window.location.reload();
+            }, 2000);
+        }
 
         if (document.getElementById('Error').textContent.toString() == "") {
             HideDisplayResetElement();
