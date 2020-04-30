@@ -61,7 +61,7 @@ Adjust the above to the location of the project.
 
 sudo reboot
 
-Once you are back up, try connecting to the webpage of the raspberyrpi.local:5000
+Once you are back up, try connecting to the webpage your pi.
 
 ---
 Assembly: TBD
