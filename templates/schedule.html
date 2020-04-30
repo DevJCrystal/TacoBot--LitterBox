@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+   <title>TacoBot: LitterBox</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.w3-button {width:275px;}
+.picker {width:275px;}
+</style>
+<body>  
+    <body style="background-color:#343434;"></body>
+    <center>
+        <form action="/SetScheduledTime" method="GET">
+            <font color="White"><h1>Set a time to run or clear the set time.</h1></font></br>
+            <input type="time" id="sched" name="sched" class="picker" value={{ scheduledTime }}></br>
+            <button class="w3-button w3-blue" id="saveSched" type="submit">Save Schedule</button></br>
+          </form>
+          <a href="/"><button class="w3-button w3-green" id="homeButton">Go Back</button></a></br></br>
+        <a href="/clearSched"><button class="w3-button w3-red" id="clearSched">Clear Schedule</button></a>
+    </center>
+</body>

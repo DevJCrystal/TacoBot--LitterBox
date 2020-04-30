@@ -11,8 +11,11 @@
     <body style="background-color:#343434;"></body>
     <center>
         <font color="Red"><h1 id="Error">{{ Message }}</h1></font>
-        <font color="White"><h2>MotorRunning: {{ motorRunning }}</h2></font>
-    <a href="/run"><button class="w3-button w3-red" id="RunButton">Run Script</button></a></p>
+        <font color="White"><h2>MotorRunning:</font></br>
+        <font color="White"><h2 id="isRunning">{{ motorRunning }}</h2></font>
+    <a href="/run"><button class="w3-button w3-red" id="RunButton">Run</button></a></p>
+    <font color="White"><h3>Next Scheduled run:<br> {{ nextRun }}</h3></font>
+    <a href="/sched"><button class="w3-button w3-blue" id="SchedButton">Schedule</button></a></p>
     <!--<input type="radio" id="dc" name="corntc" value="dc" onclick="DisableReset()">-->
     <!--<font color="White"><font size="14"><label for="dc" onclick="DisableReset()">Don't Reset</label></br></font>-->
     <!--<input type="radio" id="c" name="corntc" value="c" onclick="EnableReset()">-->
@@ -30,6 +33,18 @@
         if (running.toString() == "T") {
             document.getElementById("RunButton").setAttribute("disabled", null);
             restartTask();	    
+        }
+
+        if (running.toString() == "F") {
+            document.getElementById("isRunning").innerHTML = "False";
+        }
+
+        if (running.toString() == "T") {
+            document.getElementById("isRunning").innerHTML = "True";
+        }
+
+        if (running.toString() == "E") {
+            document.getElementById("isRunning").innerHTML = "Error";
         }
 
         function restartTask() {
