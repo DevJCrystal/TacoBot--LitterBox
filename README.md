@@ -53,6 +53,10 @@ Setting up the pi
 ---
 Last updated: April 30th, 2020
 
+I am using the latest image from Raspberry.
+Need to install:
+sudo pip3 install adafruit-circuitpython-motorkit schedule
+
 The Main script is WebServer.py so we need to set it to start with the pi.
 
 Once you are logged in, enter "sudo crontab -e"
