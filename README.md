@@ -19,7 +19,12 @@ Last Update: April 29th, 2020
 1. MotorController completed
 2. Basic webpage completed
 3. Android app that connects to webpage completed
-4. Wait for parts
+4. Daily Scheduler completed
+Wait for parts..
+---
+Android App (Source included):
+Last update April 30, 2020
+https://photos.app.goo.gl/1skhdcaWTBMKo6N39
 ---
 Parts:
 Last Update: April 29th, 2020
@@ -36,8 +41,7 @@ Approx Cost: $160 (Seems with Covid, the prices are going up)
 Learning experence and fun: Priceless
 
 ---
-Waiting on my 3D printer to arrive. Won't get it till the end of the year sadly. 
-Trying to continue with parts off amazon.
+Waiting on my 3D printer to arrive.
 
 When I get the printer, I will create a second list for those with printers.  
 ---
