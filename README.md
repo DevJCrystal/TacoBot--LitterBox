@@ -46,15 +46,23 @@ Waiting on my 3D printer to arrive.
 When I get the printer, I will create a second list for those with printers.  
 ---
 Setting up the pi
+
 Last updated: April 30th, 2020
 
 The Main script is WebServer.py so we need to set it to start with the pi.
+
 Once you are logged in, enter "sudo crontab -e"
+
 At the bottom, you will need to type
+
 @reboot python3 /home/pi/Scripts/WebServer.py &
+
 Adjust the above to the location of the project.
+
 sudo reboot
+
 Once you are back up, try connecting to the webpage of the raspberyrpi.local:5000
+
 ---
 Assembly: TBD
 Last Update: April 29th, 2020
