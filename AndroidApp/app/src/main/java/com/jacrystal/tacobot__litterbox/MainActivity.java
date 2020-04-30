@@ -22,6 +22,8 @@ import android.webkit.WebViewClient;
 public class MainActivity extends AppCompatActivity {
 
     SharedPreferences sharedpreferences;
+    WebView webView;
+    String  url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         sharedpreferences = getApplicationContext().getSharedPreferences("AppKey", 0);
-        String  url = sharedpreferences.getString("url", "https://www.google.com");
+        url = sharedpreferences.getString("url", "https://www.google.com");
 
-        WebView webView = findViewById(R.id.webView);
+        webView = findViewById(R.id.webView);
         WebSettings settings = webView.getSettings();
         settings.setDomStorageEnabled(true);
         settings.setJavaScriptEnabled(true);
@@ -47,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
             public boolean shouldOverrideUrlLoading(WebView view, String url)
             {
                 view.loadUrl(url);
-                //System.out.println(url);
                 return true;
             }
         });
@@ -72,6 +73,12 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             Intent intent = new Intent(this, urlSettings.class);
             startActivity(intent);
+            return true;
+        }
+
+        if (id == R.id.action_reset) {
+            webView.loadUrl(url + "/resetdata");
+
             return true;
         }
 
