@@ -34,7 +34,7 @@ Last Update: April 29th, 2020
 2. Raspberry Pi Stepper HAT | https://www.adafruit.com/product/2348
 3. (2x) Stepper Motors | https://www.amazon.com/gp/product/B01N30ISYC/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
 * The second stepper motor can be a smaller motor to save some money.
-4. Stepper Belts (In testing) | https://www.amazon.com/gp/product/B07XG9JN5B/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+4. Stepper Belts (In testing) | 
 5. LitterBox | https://www.amazon.com/gp/product/B073GVRT8V/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1
 
 Approx Cost: $160 (Seems with Covid, the prices are going up)
@@ -44,6 +44,17 @@ Learning experence and fun: Priceless
 Waiting on my 3D printer to arrive.
 
 When I get the printer, I will create a second list for those with printers.  
+---
+Setting up the pi
+Last updated: April 30th, 2020
+
+The Main script is WebServer.py so we need to set it to start with the pi.
+Once you are logged in, enter "sudo crontab -e"
+At the bottom, you will need to type
+@reboot python3 /home/pi/Scripts/WebServer.py &
+Adjust the above to the location of the project.
+sudo reboot
+Once you are back up, try connecting to the webpage of the raspberyrpi.local:5000
 ---
 Assembly: TBD
 Last Update: April 29th, 2020
