@@ -3,8 +3,8 @@ Automated LitterBox using Raspberry Pi and Stepper Motors
 
 I will be creating sections and they will have a last update field per section. 
 
----
 About the project:
+---
 Hello!
 I got two cats in Januray of 2020. When picking out the supplys for them, I saw the large collection of automated litterboxes. All costing a pretty penny. I understand it would be making my life easier by purchasing them but I knew I could probably make it myself. I was hoping it would be cheaper but I also don't really know much about how much torque I would need and how much it was going to weigh. I just had the idea. And I wanted to start the project. So the price list below will change as I learn. 
 
@@ -12,8 +12,8 @@ The code.. This is my first time really publishing my code. I have not taken any
 
 If you have any suggestions or questions, please feel free to let me know. Let's make this an awesome DIY automated cat litter box. 
 
----
 Progress:
+---
 Last Update: April 29th, 2020
 
 1. MotorController completed
@@ -21,12 +21,15 @@ Last Update: April 29th, 2020
 3. Android app that connects to webpage completed
 4. Daily Scheduler completed
 Wait for parts..
----
+
 Android App (Source included):
+---
 Last update April 30, 2020
 https://photos.app.goo.gl/1skhdcaWTBMKo6N39
----
+
+
 Parts:
+---
 Last Update: April 29th, 2020
 
 0. 16 Gb SD Card | https://www.amazon.com/Sandisk-Ultra-Micro-UHS-I-Adapter/dp/B073K14CVB/ref=sr_1_4?dchild=1&keywords=16+gb+sd+card&qid=1588182071&s=pet-supplies&sr=1-4-catcorr
@@ -45,7 +48,6 @@ Waiting on my 3D printer to arrive.
 
 When I get the printer, I will create a second list for those with printers.  
 
----
 Setting up the pi
 ---
 Last updated: April 30th, 2020
@@ -64,8 +66,6 @@ sudo reboot
 
 Once you are back up, try connecting to the webpage your pi.
 
----
 Assembly: TBD
-Last Update: April 29th, 2020
-
 ---
+Last Update: April 29th, 2020
