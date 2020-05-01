@@ -34,7 +34,8 @@ Parts:
 Last Update: April 29th, 2020
 
 0. 16 Gb SD Card | https://www.amazon.com/Sandisk-Ultra-Micro-UHS-I-Adapter/dp/B073K14CVB/ref=sr_1_4?dchild=1&keywords=16+gb+sd+card&qid=1588182071&s=pet-supplies&sr=1-4-catcorr
-1. Raspberry Pi 3 | https://www.amazon.com/s?k=raspberry+pi+3&ref=nb_sb_noss
+1.a Raspberry Pi 3 | https://www.amazon.com/s?k=raspberry+pi+3&ref=nb_sb_noss ($40) or 
+1.b Pi Zero W | https://www.amazon.com/Vilros-Raspberry-Starter-Power-Premium/dp/B0748MPQT4/ref=sr_1_7?dchild=1&keywords=raspberry+pi&qid=1588343149&sr=8-7 ($27)
 2. Raspberry Pi Stepper HAT | https://www.adafruit.com/product/2348
 3. (2x) Stepper Motors | https://www.amazon.com/gp/product/B01N30ISYC/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
 * The second stepper motor can be a smaller motor to save some money.
